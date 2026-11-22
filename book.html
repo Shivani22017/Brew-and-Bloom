@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bloom – Table Reservation</title>
+    <link rel="stylesheet" href="reservation.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body class="book-page">
+    <header>
+        <nav>
+            <a href="index.html"><img src="images/Brews-Blooms.jpg" alt="Brew & Bloom logo"></a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="about.html"><b>About</b></a></li>
+                    <li><a href="menu.html"><b>Menu</b></a></li>
+                    <li><a href="order.html"><b>Order</b><span class="cart-count" hidden>0</span></a></li>
+                    <li><a href="book.html"><b>Book</b></a></li>
+                    <li><a href="contact.html"><b>Contact Us</b></a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Brew &amp; Bloom</h1>
+        <p>Reserve Your Table &amp; Enjoy the Moment ☕🌸</p>
+    </header>
+
+    <section class="reservation-section">
+        <h2>Table Reservation</h2>
+        <p>Please fill the form to reserve your table</p>
+        <p class="hint">Open daily 9:00 AM – 10:00 PM</p>
+
+        <form class="reservation-form" id="bookForm" novalidate>
+            <div id="formMsg" class="form-msg" role="alert" hidden></div>
+            <input type="text" id="bName" placeholder="Full Name" autocomplete="name" required>
+            <input type="tel" id="bPhone" placeholder="Phone Number (10 digits)" inputmode="numeric" maxlength="10" autocomplete="tel" required>
+            <input type="email" id="bEmail" placeholder="Email Address" autocomplete="email" required>
+
+            <label class="field-label" for="bDate">Date</label>
+            <input type="date" id="bDate" required>
+            <label class="field-label" for="bTime">Time</label>
+            <input type="time" id="bTime" min="09:00" max="22:00" required>
+
+            <select id="bGuests" required aria-label="Number of guests">
+                <option value="">Number of Guests</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7+</option>
+            </select>
+
+            <textarea id="bRequest" placeholder="Special Request (optional)" maxlength="200"></textarea>
+
+            <button type="submit">Reserve Table</button>
+        </form>
+    </section>
+    <footer><p>&copy; 2025 Brew &amp; Bloom Cafe | All Rights Reserved | <a class="admin-link" href="admin.html">Owner Dashboard</a></p></footer>
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>

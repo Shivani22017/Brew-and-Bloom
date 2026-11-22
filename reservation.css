@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color:  rgb(63, 9, 9);
+    color: #4b2e2e;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: rgb(63, 9, 9);
+    color: #fff;
+}
+header h1 {
+    margin: 0;
+    font-size: 38px;
+}
+
+.reservation-section {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.reservation-section h2 {
+    color: #6f4e37;
+    margin-bottom: 10px;
+}
+
+.reservation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 25px;
+}
+.reservation-form input,
+.reservation-form select,
+.reservation-form textarea {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+.reservation-form textarea {
+    resize: none;
+    height: 80px;
+}
+
+.reservation-form button {
+    background-color: #6f4e37;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.reservation-form button:hover {
+    background-color: #a47148;
+}
+
+footer {
+background-color:black;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}

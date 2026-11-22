@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bloom | Place Order</title>
+    <link rel="stylesheet" href="oder.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+    <section id="reck">
+        <nav>
+            <a href="index.html"><img src="images/Brews-Blooms.jpg" alt="Brew & Bloom logo"></a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="about.html"><b>About</b></a></li>
+                    <li><a href="menu.html"><b>Menu</b></a></li>
+                    <li><a href="order.html"><b>Order</b><span class="cart-count" hidden>0</span></a></li>
+                    <li><a href="book.html"><b>Book</b></a></li>
+                    <li><a href="contact.html"><b>Contact Us</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <section id="order" class="section light">
+        <h2 style="color: #fffefe;">Place Your Order</h2>
+        <p style="color: #fffefe;">Order your favorite coffee &amp; snacks ☕🍰</p>
+
+        <form class="order-form" id="orderForm" novalidate>
+            <div id="formMsg" class="form-msg" role="alert" hidden></div>
+            <input type="text" id="custName" placeholder="Your Name" autocomplete="name" required>
+            <input type="tel" id="custPhone" placeholder="Phone Number (10 digits)" inputmode="numeric" maxlength="10" autocomplete="tel" required>
+
+            <div class="add-row">
+                <select id="item" aria-label="Select item">
+                    <option value="">Select Item</option>
+                </select>
+                <input type="number" id="qty" value="1" min="1" max="20" aria-label="Quantity">
+                <button type="button" id="addItem" class="btn-small">Add</button>
+            </div>
+
+            <div class="cart-box" id="cartBox">
+                <table class="cart-table" aria-label="Your order">
+                    <thead><tr><th>Item</th><th>Qty</th><th>Price</th><th></th></tr></thead>
+                    <tbody id="cartBody"></tbody>
+                </table>
+                <p id="cartEmpty" class="empty-msg">Your order is empty. Add an item above or from the Menu page.</p>
+                <div class="sum-lines">
+                    <div><span>Subtotal</span><span id="subtotal">Rs.0.00</span></div>
+                    <div><span>GST (5%)</span><span id="gst">Rs.0.00</span></div>
+                    <div class="grand"><span>Total</span><span id="grandTotal">Rs.0.00</span></div>
+                </div>
+            </div>
+
+            <label class="hidden-label" for="total">Total</label>
+            <input type="text" id="total" placeholder="total" readonly>
+            <textarea id="notes" placeholder="Any special instructions" maxlength="200"></textarea>
+            <button type="submit" id="placeOrder">Place Order</button>
+            <a href="index.html" id="ren">Back To Home</a>
+        </form>
+    </section>
+    <footer id="footer"><p>&copy; 2025 Brew &amp; Bloom Cafe | All Rights Reserved | <a class="admin-link" href="admin.html">Owner Dashboard</a></p></footer>
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/order.js"></script>
+</body>
+</html>

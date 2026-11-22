@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bloom | Menu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <a href="index.html"><img src="images/Brews-Blooms.jpg" alt="Brew & Bloom logo"></a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="about.html"><b>About</b></a></li>
+                    <li><a href="menu.html"><b>Menu</b></a></li>
+                    <li><a href="order.html"><b>Order</b><span class="cart-count" hidden>0</span></a></li>
+                    <li><a href="book.html"><b>Book</b></a></li>
+                    <li><a href="contact.html"><b>Contact Us</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <div class="menu-container">
+        <div class="menu-tools">
+            <input type="search" id="menuSearch" placeholder="Search the menu..." aria-label="Search the menu">
+            <div class="chips" id="menuChips" role="group" aria-label="Filter by category"></div>
+        </div>
+        <div id="menuList"></div>
+        <p id="menuEmpty" class="empty-msg" hidden>No items match your search.</p>
+    </div>
+    <a href="order.html" class="fab" id="viewOrder" hidden>🛒 View Order (<span class="cart-count-inline">0</span>)</a>
+    <footer>&copy; 2025 Brew &amp; Bloom Cafe</footer>
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>

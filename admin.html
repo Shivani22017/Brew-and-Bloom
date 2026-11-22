@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bloom | Owner Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="advanced.css">
+</head>
+<body class="admin-page">
+    <section class="admin-nav">
+        <nav>
+            <a href="index.html"><img src="images/Brews-Blooms.jpg" alt="Brew & Bloom logo"></a>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html"><b>Home</b></a></li>
+                    <li><a href="about.html"><b>About</b></a></li>
+                    <li><a href="menu.html"><b>Menu</b></a></li>
+                    <li><a href="order.html"><b>Order</b><span class="cart-count" hidden>0</span></a></li>
+                    <li><a href="book.html"><b>Book</b></a></li>
+                    <li><a href="contact.html"><b>Contact Us</b></a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    <main class="admin">
+        <h1>Owner Dashboard</h1>
+        <p class="admin-note">Demo dashboard: data is read from this browser&rsquo;s local storage (no server).</p>
+
+        <div class="stat-grid" id="stats"></div>
+
+        <section class="panel">
+            <h2>Top Items Ordered</h2>
+            <div id="chart" class="bar-chart"></div>
+        </section>
+
+        <section class="panel">
+            <h2>Orders</h2>
+            <div class="table-wrap"><table class="data-table" id="ordersTable"></table></div>
+        </section>
+
+        <section class="panel">
+            <h2>Table Reservations</h2>
+            <div class="table-wrap"><table class="data-table" id="bookingsTable"></table></div>
+        </section>
+
+        <div class="admin-actions">
+            <button id="exportOrders" class="btn-small">Export Orders (CSV)</button>
+            <button id="clearData" class="btn-small danger">Clear Demo Data</button>
+        </div>
+    </main>
+    <footer id="footer"><p>&copy; 2025 Brew &amp; Bloom Cafe | All Rights Reserved | <a class="admin-link" href="admin.html">Owner Dashboard</a></p></footer>
+    <script src="js/data.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

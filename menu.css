@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: rgb(63, 9, 9);
+}
+
+.menu-container {
+    max-width: 700px;
+    margin: 60px auto;
+    background: rgba(255, 248, 240, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 36px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.sub-title {
+    margin-top: 40px;
+    font-size: 28px;
+}
+
+.menu-section {
+    margin-top: 20px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px dashed #000000;
+    font-size: 18px;
+}
+
+footer {
+    background-color: rgb(19, 17, 15);
+    margin-top: 40px;
+    font-size: 14px;
+    color: white;
+}
